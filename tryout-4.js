@@ -1,8 +1,7 @@
-
 // const str = "SAtring"
 // console.log(str.charCodeAt(4));
 // console.log(str.length-1);
-// // implement date 
+// // implement date
 
 // const date = new Date();
 
@@ -29,15 +28,20 @@
 // console.log(typeof(arr));
 // console.log(person2.__proto__);
 
-
 // function Name(params) {
 //     return "Hello"
 // }
 // console.log(Name());
 // console.log(typeof(Name));
 
+// const li = document.querySelector("ul");
 
-const li = document.querySelector("ul");
+// const log = li.childNodes[2];
+// console.log(log);
 
-const log = li.childNodes[2];
-console.log(log);
+// Sorting method
+
+const arr = [1, 2, 33, 22, 98, 65, 33, 1, 0];
+
+const sorted = arr.sort((a, b) => b - a);
+console.log(sorted);
