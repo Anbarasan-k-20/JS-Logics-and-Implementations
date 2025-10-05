@@ -16,3 +16,6 @@ const nonRepeatChar = (str) => {
 };
 
 console.log(nonRepeatChar("chocholate"));
+
+let a = { hello: "hell" };
+console.log(typeof a);

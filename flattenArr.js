@@ -20,3 +20,15 @@ const manualFlat = (arr1) => {
 };
 
 console.log(manualFlat([1, 2, [3, 4, [5, [6]]]]));
+
+/*
+flatArr =[]
+arr.foreach((element)=>{
+    if(Array.isArray(elemnt)){
+    flatArray.concat(Function(elment))
+    }else{
+    flatarr.push(elemnet)  
+    }
+  })
+  return flatArr
+  */

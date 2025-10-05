@@ -1,27 +1,26 @@
 // is pallindrom
 
-function reverseStr(str){
-    let concat="";
-    for(let i = str.length-1;i>=0;i--){
-        
-        concat+=str[i];
-    }
-    console.log(concat);
+function reverseStr(str) {
+  let concat = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    concat += str[i];
+  }
+  console.log(concat);
 }
-reverseStr("isPallindrome")
+reverseStr("isPallindrome");
 
 // count No Of Char
 
-function findCount(str){
-    const charList = {s};
-    for(const char of tr){
-        if(charList[char]){
-            charList[char]++;
-        }else{
-            charList[char]=1;
-        }
+function findCount(str) {
+  const charList = { s };
+  for (const char of tr) {
+    if (charList[char]) {
+      charList[char]++;
+    } else {
+      charList[char] = 1;
     }
-    return charList;
+  }
+  return charList;
 }
 
 console.log(findCount("WordCount"));
@@ -42,16 +41,16 @@ console.log(findCount("WordCount"));
 
 // try -2 spread Vs rest
 
-const arr = ["car","bike", "truck"]
-const arr2 = ["lorry","ship", "boat"]
-const rest = [...arr,...arr2]
-rest[2] ="helicopter"
+const arr = ["car", "bike", "truck"];
+const arr2 = ["lorry", "ship", "boat"];
+const rest = [...arr, ...arr2];
+rest[2] = "helicopter";
 console.log(arr);
 console.log(arr2);
 console.log(rest);
 
-const restPaream = (...parm)=>{
-    console.log(parm);
-                            // important notes : rest parameter can be used to access multiple values in the form of array or object 
-}
-restPaream(1,2,3,4,5,6)                
+const restParam = (...parm) => {
+  console.log(parm);
+  // important notes : rest parameter can be used to access multiple values in the form of array or object
+};
+restParam(1, 2, 3, 4, 5, 6);
