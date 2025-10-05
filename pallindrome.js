@@ -10,3 +10,8 @@ const isPalindrome = (str) => {
   return cleanedstr == reverseStr(cleanedstr);
 };
 console.log(isPalindrome("madam"));
+
+// ispalindrome 2ndtry
+
+/* cleanedstr == reversedStr(cleaned)
+ */
