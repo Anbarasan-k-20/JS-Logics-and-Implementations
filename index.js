@@ -1,29 +1,29 @@
 // is pallindrom
 
-function reverseStr(str) {
-  let concat = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    concat += str[i];
-  }
-  console.log(concat);
-}
-reverseStr("isPallindrome");
+// function reverseStr(str) {
+//   let concat = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     concat += str[i];
+//   }
+//   console.log(concat);
+// }
+// reverseStr("isPallindrome");
 
-// count No Of Char
+// // count No Of Char
 
-function findCount(str) {
-  const charList = { s };
-  for (const char of tr) {
-    if (charList[char]) {
-      charList[char]++;
-    } else {
-      charList[char] = 1;
-    }
-  }
-  return charList;
-}
+// function findCount(str) {
+//   const charList = { s };
+//   for (const char of tr) {
+//     if (charList[char]) {
+//       charList[char]++;
+//     } else {
+//       charList[char] = 1;
+//     }
+//   }
+//   return charList;
+// }
 
-console.log(findCount("WordCount"));
+// console.log(findCount("WordCount"));
 
 // for in and for of loop
 // try 1
@@ -41,16 +41,47 @@ console.log(findCount("WordCount"));
 
 // try -2 spread Vs rest
 
-const arr = ["car", "bike", "truck"];
-const arr2 = ["lorry", "ship", "boat"];
-const rest = [...arr, ...arr2];
-rest[2] = "helicopter";
-console.log(arr);
-console.log(arr2);
-console.log(rest);
+// const arr = ["car", "bike", "truck"];
+// const arr2 = ["lorry", "ship", "boat"];
+// const rest = [...arr, ...arr2];
+// rest[2] = "helicopter";
+// console.log(arr);
+// console.log(arr2);
+// console.log(rest);
 
-const restParam = (...parm) => {
-  console.log(parm);
-  // important notes : rest parameter can be used to access multiple values in the form of array or object
-};
-restParam(1, 2, 3, 4, 5, 6);
+// const restParam = (...parm) => {
+//   console.log(parm);
+//   // important notes : rest parameter can be used to access multiple values in the form of array or object
+// };
+// restParam(1, 2, 3, 4, 5, 6);
+
+// const anagram = (str1, str2) => {
+//   str1 = str1.trim().toLowerCase();
+//   str2 = str2.trim().toLowerCase();
+//   if (str1.length !== str2.length) return false;
+
+//   const container1 = {};
+//   const container2 = {};
+
+//   for (const char of str1) {
+//     container1[char] = (container1[char] || 0) + 1;
+//   }
+
+//   for (const char of str2) {
+//     container2[char] = (container2[char] || 0) + 1;
+//   }
+
+//   for (const char in container1) {
+//     if (container1[char] !== container2[char]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// console.log(anagram("rat", "rat"));
+
+let arrVal = [1, 2, 3];
+let objVal = { name: "someName" };
+
+console.log(arrVal);
+console.log(objVal);

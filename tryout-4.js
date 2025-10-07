@@ -90,4 +90,47 @@ const findLongest = (str) => {
   return longestSentance;
 };
 
-console.log(findLongest("this is The Longest Sentance"));
+//console.log(findLongest("this is The Longest Sentance"));
+
+//closure
+
+function outer() {
+  let a = 10;
+  return function inner() {
+    let b = 5;
+    return a + b;
+  };
+}
+let fun = outer();
+console.log(fun());
+
+/*
+flatten arr
+
+  function flattenArr(arr){
+   let flattedArr=[]
+
+   arr.foreach((el)=>{
+    if(Array.isArray(el)){
+    flattedArr.concat(flattenArr(el))
+    }else{
+      flattedArr.push(el)  
+    }
+    })
+    retur flattedArr
+  }
+}
+  // findVowels(str){
+  let vowels =[a,e,i,o,u]
+  let vowelList={}
+  for(let vowel of vowels){
+    let count = 0
+    for (let char of str){
+    if (char.toLowerCase()==vowel){
+      count ++
+    }
+      vowelList[char]=vowel
+    }
+    return vowellsit
+  }
+*/

@@ -12,9 +12,9 @@
 // };
 // console.log(checkParanthesis("hey (ho)w)"));
 
-function checkparanthesis(arr) {
+function checkparanthesis(str) {
   let paranthesis = [];
-  for (const char of arr) {
+  for (const char of str) {
     if (char == "(") {
       paranthesis.push(char);
     } else if (char == ")") {
