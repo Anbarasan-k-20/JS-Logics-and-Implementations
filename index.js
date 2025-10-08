@@ -80,8 +80,26 @@
 // };
 // console.log(anagram("rat", "rat"));
 
-let arrVal = [1, 2, 3];
-let objVal = { name: "someName" };
+function person() {
+  name: "name";
+  console.log(this);
+}
 
-console.log(arrVal);
-console.log(objVal);
+let newPerson = new person();
+person();
+// console.log(newPerson);
+
+let objPro = {
+  a: "hello",
+  b: function () {
+    console.log(this);
+  },
+};
+console.log(objPro.b);
+
+function Add(a = 1, b = 2) {
+  return a + b;
+}
+console.log(Add());
+console.log(Add(4));
+console.log(Add(undefined, 10));
