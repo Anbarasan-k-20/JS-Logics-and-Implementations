@@ -1,0 +1,1 @@
+let prommise = new Promise();
